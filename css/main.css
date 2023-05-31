@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: "Amita", cursive;
+  font-family: "Fira Code", monospace;
   font-size: 1.6rem;
   margin: 0;
   padding: 0;
@@ -20,6 +20,9 @@ a {
   color: white;
 }
 
+header {
+  position: fixed;
+}
 header .wrappers {
   display: flex;
   align-items: center;
@@ -40,9 +43,30 @@ header ul li {
   margin: 0 auto;
 }
 
+.block {
+  width: 100vw;
+  height: 100vh;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#home hr {
+  width: 25rem;
+  text-align: center;
+}
 #home p {
   display: inline;
   font-size: calc(5rem + 0.5vw);
+}
+#home #firstname {
+  font-family: "Amita", cursive;
+}
+#home #lastname {
+  font-family: "Thasadith", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */

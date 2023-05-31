@@ -1,0 +1,47 @@
+@use "reset";
+@use "variables" as v;
+@use "mixin" as m;
+
+
+
+
+// header
+header {
+    .wrappers {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 10rem;
+        }
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            margin: 0 1rem;
+            list-style: none;
+        }
+
+    }
+}
+
+// Variables Globales
+
+.container {
+    max-width: 110rem;
+    margin: 0 auto;
+} 
+
+// main 
+
+#home {
+    p{
+        display: inline;
+        font-size: v.$fontSizeTitleXXLarge;
+    }
+}
+
+
+// Footer

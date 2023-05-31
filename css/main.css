@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  font-family: "Amita", cursive;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(40, 40, 40);
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+header .wrappers {
+  display: flex;
+  align-items: center;
+}
+header .wrappers img {
+  width: 10rem;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  margin: 0 1rem;
+  list-style: none;
+}
+
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+#home p {
+  display: inline;
+  font-size: calc(5rem + 0.5vw);
+}
+
+/*# sourceMappingURL=main.css.map */

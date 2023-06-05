@@ -8,24 +8,44 @@
 // header
 header {
     position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
     .wrappers {
         display: flex;
         align-items: center;
-
-        img {
-            width: 10rem;
-        }
+        flex-direction: column;
+        justify-content: center;
     }
 
     ul {
         display: flex;
+        padding: 0;
 
         li {
             margin: 0 1rem;
             list-style: none;
+            display: inline-block;  
+            padding: 5px;
+            cursor: pointer;
+            transition: color 0.5s;
+            a{
+                color: rgb(190, 190, 190);
+    
+            }
+        
+
         }
 
     }
+}
+li.active{
+            
+    a {
+        color: rgb(104, 104, 104);
+    }
+
 }
 
 // Variables Globales
@@ -33,12 +53,19 @@ header {
 .container {
     max-width: 110rem;
     margin: 0 auto;
-} 
+}
+.article {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
 
 // main 
 
-.block{
-    width: 100vw;
+.block {
     height: 100vh;
 }
 
@@ -47,21 +74,46 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    hr{
+
+    hr {
         width: 25rem;
         text-align: center;
+        margin: 2rem auto;
     }
-    p{
+
+    p {
         display: inline;
+        text-shadow: 0px 3px 5px #222222;
         font-size: v.$fontSizeTitleXXLarge;
     }
-    #firstname{
+
+    #firstname {
         font-family: 'Amita', cursive;
     }
-    #lastname{
+
+    #lastname {
         font-family: 'Thasadith', sans-serif;
     }
 }
 
 
+
+
+
 // Footer
+
+
+// Animation
+
+@keyframes translateFirst {
+    0%{
+        transform: translateY(-500);
+    }
+    50%{
+        transform: translateY(-250);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}

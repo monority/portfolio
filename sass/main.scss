@@ -9,41 +9,65 @@
 header {
     position: fixed;
     display: flex;
-    justify-content: center;
     width: 100%;
+    font-size: v.$fontSizedefault;
+    margin-top: 1rem;
 
+    img {
+        width: 2rem;
+    }
+    nav{
+        width: 100%;
+    }
     .wrappers {
         display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
+        width: 100%;
     }
+    .wrapperLi{
+    
+        background-color: v.$backgroundColor;
+        border-radius: 10rem;
+        box-shadow: -1px 1px 11px 2px rgba(41,41,41,0.19);
+
+        padding: 0.5rem 0;
+        color: rgb(73, 73, 73);
+    }
+
 
     ul {
         display: flex;
         padding: 0;
+        margin: 0;
 
         li {
-            margin: 0 1rem;
+            
             list-style: none;
-            display: inline-block;  
+            display: inline-block;
             padding: 5px;
             cursor: pointer;
             transition: color 0.5s;
-            a{
+
+            a {
                 color: rgb(190, 190, 190);
-    
+                text-decoration: none;
+                font-weight: 500;
+
             }
-        
+
 
         }
 
     }
 }
-li.active{
-            
-    a {
-        color: rgb(104, 104, 104);
+
+li.active {
+
+    a {           background-color: v.$backgroundColor;
+        border-radius: 10rem;
+        box-shadow: -1px 1px 11px 2px rgba(41,41,41,0.19);
+        padding: 0.8rem 1.5rem;
+        color: rgb(73, 73, 73);
     }
 
 }
@@ -51,16 +75,11 @@ li.active{
 // Variables Globales
 
 .container {
-    max-width: 110rem;
+    max-width: 85rem;
     margin: 0 auto;
 }
-.article {
-    display: none;
-}
 
-.visible {
-    display: block;
-}
+
 
 
 // main 
@@ -74,6 +93,13 @@ li.active{
     align-items: center;
     justify-content: center;
     text-align: center;
+    .wrappersName{
+        display: flex;
+    }
+    strong{
+        font-weight: 100;
+
+    }
 
     hr {
         width: 25rem;
@@ -83,20 +109,26 @@ li.active{
 
     p {
         display: inline;
-        text-shadow: 0px 3px 5px #222222;
+        text-shadow: 0px 3px 5px rgb(34, 34, 34,0.5);
         font-size: v.$fontSizeTitleXXLarge;
     }
 
-    #firstname {
-        font-family: 'Amita', cursive;
-    }
 
-    #lastname {
-        font-family: 'Thasadith', sans-serif;
-    }
 }
 
-
+#work{
+    max-width: 60rem;
+    margin: 0 auto;
+    .wrappers{
+        background-color: v.$backgroundColorSide;
+        border-radius: 2rem;
+        box-shadow: -1px 1px 11px 2px rgba(41,41,41,0.11);
+        padding: 0.8rem 1.5rem;
+        height: 25rem;
+        padding: 2rem;
+      
+    }
+}
 
 
 
@@ -106,14 +138,16 @@ li.active{
 // Animation
 
 @keyframes translateFirst {
-    0%{
+    0% {
         transform: translateY(-500);
     }
-    50%{
+
+    50% {
         transform: translateY(-250);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
-    
+
 }
